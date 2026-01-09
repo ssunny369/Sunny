@@ -1,6 +1,6 @@
 <?php
-    include '../includes/header.inc.php';
-    include '../includes/navbar.inc.php';
+    // include '../includes/header.inc.php';
+    // include '../includes/navbar.inc.php';
 ?>
     <form class="col-md-8 col-lg-6 mx-auto">
         <h3>Register</h3>
@@ -23,6 +23,3 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-<?php
-    include("../includes/footer.inc.php");
-?>
