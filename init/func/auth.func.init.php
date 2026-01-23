@@ -15,6 +15,9 @@ function usernameExists($username){
 
 function registerUser($name, $username, $passwd) {
     global $db;
+    if(usernameExists($username)){
+        return false;
+    }
     $query = $db-> prepare('INSERT INTO tbl_users (name, username, passwd) VALUES (?,?,?)');
     $query->bind_param('sss', $name, $username, $passwd);
     $query->execute();
@@ -23,4 +26,5 @@ function registerUser($name, $username, $passwd) {
     }
     return false;
 }
+?>
 

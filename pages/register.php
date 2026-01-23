@@ -28,6 +28,8 @@ if (isset($_POST['name'], $_POST['username'], $_POST['passwd'], $_POST['confirmP
                     Registered. Go to <a href="./?page=login">Login</a>
                     </div>';
             // header('Location: ./?page=login');
+        } else{
+            echo '<div class="alert alert-danger" role="alert"> Error hz </div>;
         }
     }
 }
