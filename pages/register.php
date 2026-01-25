@@ -29,7 +29,7 @@ if (isset($_POST['name'], $_POST['username'], $_POST['passwd'], $_POST['confirmP
                     </div>';
             // header('Location: ./?page=login');
         } else{
-            echo '<div class="alert alert-danger" role="alert"> Error hz </div>;
+            echo '<div class="alert alert-danger" role="alert"> Error hz </div>';
         }
     }
 }
