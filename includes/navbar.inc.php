@@ -1,6 +1,3 @@
-<?php
-// print_r($user);
-?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -23,13 +20,13 @@
                     </a>
                     <ul class="dropdown-menu">
                         <?php if (empty($user)) { ?>
-                            <li><a class="dropdown-item" href="/g19bcsy3c/pages/?page=login">Login</a></li>
+                            <li><a class="dropdown-item" href="/g19bcsy3c/?page=login">Login</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="/g19bcsy3c/pages/?page=register">Register</a></li>
+                            <li><a class="dropdown-item" href="/g19bcsy3c/?page=register">Register</a></li>
                         <?php } else { ?>
-                            <li><a class="dropdown-item" href="/g19bcsy3c/pages/?page=logout">Logout</a></li>
+                            <li><a class="dropdown-item" href="/g19bcsy3c/?page=logout">Logout</a></li>
                         <?php } ?>
                     </ul>
                 </li>

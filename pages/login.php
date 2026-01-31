@@ -1,5 +1,5 @@
 <?php
-$username = $passwd = '';
+$username = '';
 $usernameErr = $passwdErr = '';
 if (isset($_POST['username'], $_POST['passwd'])) {
     $username = trim($_POST['username']);

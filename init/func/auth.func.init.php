@@ -21,7 +21,7 @@ function registerUser($name, $username, $passwd) {
     $query = $db-> prepare('INSERT INTO tbl_users (name, username, passwd) VALUES (?,?,?)');
     $query->bind_param('sss', $name, $username, $passwd);
     $query->execute();
-    if($query ->affected_rows){
+    if($db ->affected_rows){
         return true;
     }
     return false;
