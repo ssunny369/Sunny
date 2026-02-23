@@ -55,5 +55,13 @@ function loggedInUser(){
     return null;
 }
 
-?>
+// function isAdmin(){
+//     return loggedInUser() -> level === 'admin';
+// }
 
+function isAdmin(){
+    $user = loggedInUser();
+    return $user && $user -> level === 'admin';
+}
+
+?>
